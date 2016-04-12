@@ -1,14 +1,13 @@
-/*
-const http = require('http');
+var express = require('express');
 
-const hostname = '127.0.0.1';
-const port = 1337;
+// Constants
+var PORT = 8888;
 
-http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-*/
-console.log("Hello World!");
+// // App
+ var app = express();
+ app.get('/', function (req, res) {
+   res.send('Hello world\n');
+ });
+
+app.listen(PORT);
+console.log('Running on http://localhost:' + PORT);
