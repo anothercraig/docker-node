@@ -1,0 +1,9 @@
+{
+  "name": "node-yo",
+    "private": true,
+    "version": "0.0.1",
+    "description": "node yo",
+    "dependencies": {
+      "express": "3.2.4"
+    }
+}
